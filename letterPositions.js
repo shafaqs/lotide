@@ -25,17 +25,16 @@ const letterPositions = function(sentence) {
   const results = {};
   for(let i = 0; i < sentence.length; i++) {
     if (sentence[i] === " ") continue;
-    if (results[sentence[i]]){
-      results[sentence[i]].push(i);
-    }
-    else
-    {
-      let arr = [];
-      arr.push(i);
+    if(!(results[sentence[i]])){
+      let arr = []
+      arr.push(i)
       results[sentence[i]] = arr;
-    }      
+  }
+  else{  
+    results[sentence[i]].push(i);
+  }           
   }
   return results;
 };
-console.log(letterPositions("I eat fruits daily"))
-assertArraysEqual(letterPositions("hello").e, [1]);
+console.log(letterPositions("I eat fruits daity"))
+//assertArraysEqual(letterPositions("hello").e, [1]);
