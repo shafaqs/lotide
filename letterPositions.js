@@ -26,7 +26,7 @@ const letterPositions = function(sentence) {
   for(let i = 0; i < sentence.length; i++) {
     if (sentence[i] === " ") continue;
     if(!(results[sentence[i]])){
-      let arr = []
+      let arr = []   // have an empty array to push in [i]where there are repeat.
       arr.push(i)
       results[sentence[i]] = arr;
   }

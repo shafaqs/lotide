@@ -23,12 +23,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
   
-const assertArraysEqual = function(array1, array2 ){
-  if(eqArrays(array1, array2))
-    console.log("success")
-  else 
-    console.log("failure")
-}
+
 //eqObject starts below
 
 // Returns true if both objects have identical keys with identical values.

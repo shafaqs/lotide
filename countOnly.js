@@ -15,14 +15,14 @@ assertEqual(1, 1);
 const countOnly = function(allItems, itemsToCount) {
   const result = {} 
   for (let i = 0; i<allItems.length; i++){
-    const item = allItems[i]
+    const item = allItems[i]  //when i = 0 item = Karl
     if (itemsToCount[item]){
       if(result[item]){
         result[item]+= 1
       }else{
         result[item] = 1
       }
-
+      //continue to the next loop
       
     }
   
