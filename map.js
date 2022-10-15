@@ -44,3 +44,6 @@ const words = ["ground", "control", "to", "major", "tom"];
       assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]) // => true
       assertArraysEqual(["1", "2", "3", "4"], ["1", "2", 3], )// => false
       assertArraysEqual([1, 2, 3, 4], map([0, 1, 2, 3],  n => n+1 ))
+
+
+      module.exports = map;

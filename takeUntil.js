@@ -45,3 +45,6 @@ for(let i = 0; i<array1.length; i++){
     assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]) // => true
     assertArraysEqual(["1", "2", "3", "4"], ["1", "2", 3])// => false
     assertArraysEqual(["Newyork"], takeUntil(["Newyork", "is", "home"], x => x === "is" ))
+
+
+    module.exports = takeUntil;

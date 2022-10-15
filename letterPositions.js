@@ -38,3 +38,5 @@ const letterPositions = function(sentence) {
 };
 console.log(letterPositions("I eat fruits daity"))
 //assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports = letterPositions;

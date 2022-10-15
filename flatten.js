@@ -39,3 +39,7 @@ for(let i = 0; i<array1.length; i++){
 
   console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
 
+
+
+  module.exports = flatten;
+
